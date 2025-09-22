@@ -28,6 +28,18 @@
         };
     };
 
+    pointing_listener: pointing_listener {
+        compatible = "zmk,input-listener";
+        device = &pmw3310;  // Предполагаю, что трекбол - это &pmw3360; уточни в твоём shield, если иначе
+        input-processors = <&pointer_resolution_multiplier 1 1>;  // Нормальная скорость по умолчанию
+
+        caret_mode {
+            layers = <2;  // Активируется на слое NAV (индекс 2)
+            input-processors = <&pointer_resolution_multiplier 1 20>;  // Замедляем в 20 раз для точного управления кареткой
+            process-next;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
