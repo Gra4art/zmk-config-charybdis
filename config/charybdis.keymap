@@ -98,7 +98,7 @@
         input-processors = <&pointer_resolution_multiplier 1 1>;
 
         caret_mode {
-            layers = <1>;
+            layers = <2>;
             input-processors = <&pointer_resolution_multiplier 1 20>;
             process-next;
         };
