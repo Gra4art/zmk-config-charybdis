@@ -37,7 +37,7 @@
     behaviors {
         td_LBKT_RBKT: tap_dance_LBKT_RBKT {
             compatible = "zmk,behavior-tap-dance";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <210>;
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
