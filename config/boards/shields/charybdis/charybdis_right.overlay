@@ -61,4 +61,16 @@
     compatible = "zmk,input-listener";
     device = <&trackball>;
   };
+
+  // Добавленный listener для скролла на слое 5
+  scroll_mode_listener: scroll_mode_listener {
+    compatible = "zmk,input-behavior-listener";
+    device = <&trackball>;
+    layers = <5>;  // Активен на слое SCROLL
+    evt-type = <INPUT_EV_REL>;
+    x-input-code = <INPUT_REL_MISC>;  // Горизонтальный скролл
+    y-input-code = <INPUT_REL_WHEEL>;  // Вертикальный скролл
+    y-invert;  // Инвертировать Y для естественного скролла
+    bindings = <&ib_wheel_scaler 1 14>;  // Скорость скролла (настрой 14 по вкусу)
+  };
 };
