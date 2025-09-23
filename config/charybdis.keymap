@@ -92,19 +92,6 @@
         };
     };
 
-    pointing_listener: pointing_listener {
-        compatible = "zmk,input-listener";
-        device = &vtrackball;
-        input-processors = <&pointer_resolution_multiplier 1 1>;
-
-        caret_mode {
-            layers = <2>;
-            input-processors = <&pointer_resolution_multiplier 1 20>;
-            process-next;
-        };
-    };
-};
-
 &mt {
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
