@@ -19,7 +19,7 @@
     mouse_scroll {
         timeout-ms = <50>;
         key-positions = <53 54>;  // MB1 + MB2
-        bindings = <&lt 1>;
+        bindings = <&mo 1>;
     };
     };
 
