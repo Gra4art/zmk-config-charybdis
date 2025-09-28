@@ -53,10 +53,10 @@
         BASE {
             bindings = <
 &kp GRAVE   &kp N1       &kp N2      &kp N3           &kp N4        &kp N5       &kp N6     &kp N7             &kp N8      &kp N9      &kp N0          &minus_plus
-&kp TAB     &kp Q        &kp W       &kp E            &kp R         &kp T        &kp Y      &kp U              &kp I       &kp O       &kp P           &td_LBKT_RBKT
-&kp ESC     &mt LCTRL A  &mt LALT S  &mt LGUI D       &mt LSHIFT F  &kp G        &kp H      &mt RSHIFT J       &mt RGUI K  &mt RALT L  &mt RCTRL SEMI  &kp APOS
-&kp LSHIFT  &kp Z        &kp X       &kp C            &kp V         &kp B        &kp N      &kp M              &kp COMMA   &kp DOT     &kp SLASH       &kp BACKSLASH
-                                     &shift_capsword  &kp LALT      &kp ENTER    &kp ENTER  &mt DEL BACKSPACE
+&kp LCTRL   &kp Q        &kp W       &kp E            &kp R         &kp T        &kp Y      &kp U              &kp I       &kp O       &kp P           &td_LBKT_RBKT
+&kp TAB     &kp A        &kp S       &kp D            &kp F         &kp G        &kp H      &kp J              &kp K       &kp L       &kp SEMI        &kp APOS
+&kp LGUI    &kp Z        &kp X       &kp C            &kp V         &kp B        &kp N      &kp M              &kp COMMA   &kp DOT     &kp SLASH       &kp BACKSLASH
+                                     &kp LSHIFT       &kp LALT      &kp ENTER    &kp ENTER  &mt DEL BACKSPACE
                                                       &mkp MB1      &mkp MB2     &kp SPACE
             >;
         };
