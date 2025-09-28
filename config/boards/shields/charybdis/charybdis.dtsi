@@ -8,6 +8,10 @@
 
     vbatt: vbatt {
 	    compatible = "zmk,battery-nrf-vddh";
+
+    chosen {
+        zmk,battery = <&vbatt>;  // Ссылка на узел батареи
+    };
     };
 
     default_transform: keymap_transform_0 {
