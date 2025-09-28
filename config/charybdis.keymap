@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MINUS_PLUS";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp KP_EQUAL>;
+            bindings = <&kp MINUS>, <&kp EQUAL>;
         };
 
         shift_capsword: shift_capsword {
