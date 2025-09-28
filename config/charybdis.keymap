@@ -85,3 +85,8 @@
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
+
+&mmv {  // Движение курсора
+    time-to-max-speed-ms = <300>;  // Разгон за 300 мс
+    acceleration-exponent = <2>;   // Линейная кривая (0=без, 3+=агрессивная)
+};
