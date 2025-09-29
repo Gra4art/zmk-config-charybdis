@@ -90,11 +90,11 @@
 };
 
 &mmv {  // Движение курсора
-    time-to-max-speed-ms = <150>;  // Разгон за 300 мс
-    acceleration-exponent = <3>;   // Линейная кривая (0=без, 3+=агрессивная)
+    time-to-max-speed-ms = <50>;  // Разгон за 300 мс
+    acceleration-exponent = <5>;   // Линейная кривая (0=без, 3+=агрессивная)
 };
 
 &msc {  // Прокрутка
-    time-to-max-speed-ms = <300>;
-    acceleration-exponent = <3>;   // Агрессивная кривая для скролла
+    time-to-max-speed-ms = <150>;
+    acceleration-exponent = <5>;   // Агрессивная кривая для скролла
 };
