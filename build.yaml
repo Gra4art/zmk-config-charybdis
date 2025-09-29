@@ -1,8 +1,15 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: charybdis_left
+    shield: charybdis_left  # Ваша левая половина
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
   - board: nice_nano_v2
-    shield: charybdis_right
+    shield: charybdis_right  # Правая
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
   - board: nice_nano_v2
-    shield: settings_reset
+    shield: charybdis_dongle  # Донгл
+
+  - board: nice_nano_v2
+    shield: settings_reset  # Для сброса
